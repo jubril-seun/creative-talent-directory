@@ -13,6 +13,8 @@ body {
     --color-white: rgb(255, 255, 255);
     --color-dark-gray: rgb(52, 52, 52);
     --color-light-gray: rgb(211, 211, 211);
+    --color-active-button: rgb(21, 98, 222);
+    --color-active-button-light: rgb(173, 205, 255);
     --padding-x: 24px;
     --padding-y: 14px;
 }
@@ -45,6 +47,12 @@ header {
     font-size: 14px;
 }
 
+@media (max-width: 769px) {
+    .header-bar a {
+        display: none;
+    }
+}
+
 .header-bar a:hover {
     color: var(--color-black);
 }
@@ -68,11 +76,22 @@ button {
 
 button:hover {
     background-color: rgb(234, 234, 234);
+    color: var(--color-black);
 }
 
 button:active {
     background-color: var(--color-light-gray);
     scale: 96%;
+}
+
+.active-button {
+    background-color: var(--color-active-button);
+    color: var(--color-white);
+}
+
+.active-button-light {
+    background-color: var(--color-active-button-light);
+    color: var(--color-active-button);
 }
 
 hr {
@@ -147,7 +166,7 @@ input:focus {
     align-items: center;
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
-        padding-top: 22px;
+    padding-top: 22px;
     padding-bottom: 22px;
 }
 
@@ -167,4 +186,35 @@ input:focus {
 
 .filters button:nth-child(2) {
     margin-left: 12px;
+}
+
+.featuredMembers {
+    padding-left: var(--padding-x);
+    padding-right: var(--padding-x);
+}
+
+.cards {
+    border: .75px solid var(--color-light-gray);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: .75em;
+}
+
+.fm-cards {
+    display: grid;
+    width: max-width;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+   .fm-cards {
+    grid-template-columns: 1fr 1fr;
+   } 
+}
+
+@media (max-width: 769px) {
+   .fm-cards {
+    grid-template-columns: 1fr;
+   } 
 }
