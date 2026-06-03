@@ -11,10 +11,11 @@ body {
 :root {
     --color-black: rgb(15, 15, 15);
     --color-white: rgb(255, 255, 255);
-    --color-dark-gray: rgb(52, 52, 52);
+    --color-dark-gray: rgb(133, 133, 133);
     --color-light-gray: rgb(211, 211, 211);
     --color-active-button: rgb(21, 98, 222);
     --color-active-button-light: rgb(173, 205, 255);
+    --color-alt-bg-color: rgb(247, 247, 245);
     --padding-x: 24px;
     --padding-y: 14px;
 }
@@ -120,7 +121,7 @@ hr {
     max-width: 500px;
     flex: 1;
     text-align: center;
-    color: var(--color-dark-gray);
+    color: var(--color-black);
     line-height: 1.5rem;
 }
 
@@ -189,14 +190,26 @@ input:focus {
 }
 
 .featuredMembers {
+    background-color: var(--color-alt-bg-color);
     padding-left: var(--padding-x);
     padding-right: var(--padding-x);
+    padding-top: 26px;
+    padding-bottom: 50px;
+}
+
+.featuredMembers-text {
+    padding-bottom: 22px;
+    font-size: 14px;
+    color: var(--color-dark-gray);
 }
 
 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     border: .75px solid var(--color-light-gray);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-color: var(--color-white);
+    padding: 25px;
     border-radius: .75em;
 }
 
@@ -217,4 +230,59 @@ input:focus {
    .fm-cards {
     grid-template-columns: 1fr;
    } 
+}
+
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nameTitle p:nth-child(1){
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.nameTitle p:nth-child(2){
+    color: var(--color-black);
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.role-tags {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.role-tags div {
+    background-color: red;
+    padding: 4px 12px;
+    border-radius: 1.5rem;
+    font-size: 14px;;
+}
+
+.followFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.followFooter p {
+    font-size: 12px;
+    color: var(--color-dark-gray);
 }
