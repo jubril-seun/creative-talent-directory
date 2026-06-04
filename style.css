@@ -222,7 +222,6 @@ input:focus {
 
 .fm-cards {
     display: grid;
-    width: max-width;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
@@ -266,7 +265,7 @@ input:focus {
 
 .nameTitle p:nth-child(2){
     color: var(--color-black);
-    font-weight: 200;
+    font-weight: 400;
     font-size: 15px;
 }
 
