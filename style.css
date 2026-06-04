@@ -277,10 +277,10 @@ input:focus {
 }
 
 .role-tags div {
-    background-color: red;
     padding: 4px 12px;
     border-radius: 1.5rem;
-    font-size: 14px;;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .followFooter {
@@ -292,5 +292,95 @@ input:focus {
 .followFooter p {
     font-size: 12px;
     color: var(--color-dark-gray);
+}
+
+.card-1 .avatar {
+    color: hsl(217, 84%, 37%);
+    background-color: hsl(217, 84%, 95%);
+}
+
+.card-2 .avatar {
+    color: hsl(166, 82%, 30%);
+    background-color: hsl(166, 82%, 95%);
+}
+
+.card-3 .avatar {
+    color: hsl(33, 90%, 30%);
+    background-color: hsl(33, 90%, 95%);
+}
+
+.card-4 .avatar {
+    color: hsl(304, 50%, 42%);
+    background-color: hsl(304, 50%, 95%);
+}
+
+.card-5 .avatar {
+    color: hsl(238, 77%, 42%);
+    background-color: hsl(238, 77%, 95%);
+}
+
+.card-6 .avatar {
+    color: hsl(142, 78%, 25%);
+    background-color: hsl(142, 50%, 95%);
+}
+
+.role-tags .tag-motion {
+    color: hsl(217, 84%, 37%);
+    background-color: hsl(217, 84%, 95%);
+}
+
+.role-tags .tag-3d {
+    color: hsl(238, 77%, 42%);
+    background-color: hsl(238, 77%, 95%);
+}
+
+.role-tags .tag-ux {
+    color: hsl(166, 82%, 30%);
+    background-color: hsl(166, 82%, 95%);
+}
+
+.role-tags .tag-research {
+    color: hsl(142, 78%, 25%);
+    background-color: hsl(142, 50%, 95%);
+}
+
+.role-tags .tag-react {
+    color: hsl(33, 90%, 30%);
+    background-color: hsl(33, 90%, 95%);
+}
+
+.role-tags .tag-css {
+    color: hsl(304, 50%, 42%);
+    background-color: hsl(304, 50%, 95%);
+}
+
+.role-tags .tag-branding {
+    color: hsl(304, 50%, 42%);
+    background-color: hsl(304, 50%, 95%);
+}
+
+.role-tags .tag-strategy {
+    color: hsl(238, 77%, 42%);
+    background-color: hsl(238, 77%, 95%);
+}
+
+.role-tags .tag-leadership {
+    color: hsl(238, 77%, 42%);
+    background-color: hsl(238, 77%, 95%);
+}
+
+.role-tags .tag-campaign {
+    color: hsl(142, 78%, 25%);
+    background-color: hsl(142, 50%, 95%);
+}
+
+.role-tags .tag-illustration {
+    color: hsl(142, 78%, 25%);
+    background-color: hsl(142, 50%, 95%);
+}
+
+.role-tags .tag-editorial {
+    color: hsl(238, 77%, 42%);
+    background-color: hsl(238, 77%, 95%);
 }
 
